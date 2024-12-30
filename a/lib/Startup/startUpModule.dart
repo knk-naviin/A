@@ -1,3 +1,4 @@
+import "package:a/Authentication/loginPage.dart";
 import "package:flutter/material.dart";
 import "package:smooth_page_indicator/smooth_page_indicator.dart";
 
@@ -103,7 +104,9 @@ class _startUpState extends State<startUp> {
               child: isLastPage
                   ? OutlinedButton(
                 onPressed: () {
-                  // Action when the button is clicked
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (_) => loginPage()),
+                  );
                 },
                 child: Text('Get Started'),
                 style: ButtonStyle(
@@ -205,12 +208,5 @@ class _startUpState extends State<startUp> {
 }
 
 
-class MainScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('Main Screen')),
-    );
-  }
-}
+
 
