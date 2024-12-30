@@ -6,6 +6,10 @@ void main() => runApp( new MaterialApp(
   debugShowCheckedModeBanner: false,
   title: 'Flutter Demo',
   theme: ThemeData(
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(fontSize: 16, color: Colors.black),
+      bodyMedium: TextStyle(fontSize: 14, color: Colors.black),
+    ),
     // Set global colors
     scaffoldBackgroundColor: Colors.white, // White background for all screens
     primaryColor: Colors.indigoAccent, // Primary app color

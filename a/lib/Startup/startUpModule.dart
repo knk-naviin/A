@@ -105,7 +105,7 @@ class _startUpState extends State<startUp> {
                   ? OutlinedButton(
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (_) => loginPage()),
+                    MaterialPageRoute(builder: (_) => LoginScreen()),
                   );
                 },
                 child: Text('Get Started'),
