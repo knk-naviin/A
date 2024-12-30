@@ -3,21 +3,23 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   final String hintText;
   final IconData icon;
-  final bool isPassword;
+  final TextEditingController controller;
+  final Widget? prefix;
 
   const CustomTextField({
     super.key,
     required this.hintText,
     required this.icon,
-    this.isPassword = false,
+    required this.controller,
+    this.prefix,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      obscureText: isPassword,
+      controller: controller,
       decoration: InputDecoration(
-        prefixIcon: Icon(icon, color: Colors.indigoAccent),
+        prefixIcon: prefix ?? Icon(icon, color: Colors.indigoAccent),
         hintText: hintText,
         filled: true,
         fillColor: Colors.grey[200],

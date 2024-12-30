@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   onboarding: ^4.0.2
   smooth_page_indicator: ^1.2.0+3
+  intl_phone_field: ^3.0.2
 
 dev_dependencies:
   flutter_test:
