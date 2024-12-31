@@ -2,6 +2,8 @@ import 'package:a/Authentication/otpVerification.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../Authentication/otpInputScreen.dart';
+
 class startUp extends StatefulWidget {
   const startUp({super.key});
 
