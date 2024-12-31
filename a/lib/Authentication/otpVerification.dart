@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../widgets/primary_button.dart';
 
@@ -29,7 +29,7 @@ class _OtpInputScreenState extends State<OtpInputScreen> {
       );
 
       await _auth.signInWithCredential(credential);
-      await signInWithGoogle();
+      // await signInWithGoogle();
     } catch (e) {
       setState(() => isLoading = false);
       ScaffoldMessenger.of(context)
@@ -37,29 +37,29 @@ class _OtpInputScreenState extends State<OtpInputScreen> {
     }
   }
 
-  Future<void> signInWithGoogle() async {
-    final GoogleSignIn googleSignIn = GoogleSignIn();
-    final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
-
-    if (googleUser != null) {
-      final GoogleSignInAuthentication googleAuth =
-      await googleUser.authentication;
-
-      final AuthCredential credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      final UserCredential userCredential =
-      await _auth.signInWithCredential(credential);
-
-      final user = userCredential.user;
-      if (user != null) {
-        await saveUserToFirestore(user);
-        Navigator.pushReplacementNamed(context, '/dashboard');
-      }
-    }
-  }
+  // Future<void> signInWithGoogle() async {
+  //   final GoogleSignIn googleSignIn = GoogleSignIn();
+  //   final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+  //
+  //   if (googleUser != null) {
+  //     final GoogleSignInAuthentication googleAuth =
+  //     await googleUser.authentication;
+  //
+  //     final AuthCredential credential = GoogleAuthProvider.credential(
+  //       accessToken: googleAuth.accessToken,
+  //       idToken: googleAuth.idToken,
+  //     );
+  //
+  //     final UserCredential userCredential =
+  //     await _auth.signInWithCredential(credential);
+  //
+  //     final user = userCredential.user;
+  //     if (user != null) {
+  //       await saveUserToFirestore(user);
+  //       Navigator.pushReplacementNamed(context, '/dashboard');
+  //     }
+  //   }
+  // }
 
   Future<void> saveUserToFirestore(User user) async {
     final userDoc = FirebaseFirestore.instance.collection('users').doc(user.uid);
