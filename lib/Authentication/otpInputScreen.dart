@@ -93,8 +93,30 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
               ),
             ),
             if (isLoading)
-              const Center(
-                child: CircularProgressIndicator(),
+               Center(
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    // Circular progress indicator
+                    CircularProgressIndicator(
+                      value: 0.7,  // Set the progress here
+                      strokeWidth: 8.0,
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                    ),
+                    // Glossy overlay (semi-transparent)
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Colors.white.withOpacity(0.3), Colors.transparent],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
           ],
         ),
