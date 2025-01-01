@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDqQcwONHS6oPSF8wT2OR7UkOzQczzm894</string>
+	<string>AIzaSyC8006wcwjneynzQ7-fh9XMeVeOk45XxDE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>725077094430</string>
+	<string>301703092246</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.a.a</string>
+	<string>com.a.recover</string>
 	<key>PROJECT_ID</key>
-	<string>a-auth-7204d</string>
+	<string>a-auth-recover</string>
 	<key>STORAGE_BUCKET</key>
-	<string>a-auth-7204d.firebasestorage.app</string>
+	<string>a-auth-recover.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:725077094430:ios:fa69fe6d17f232220cbe0f</string>
+	<string>1:301703092246:ios:5aa16b3b4604c28d757d37</string>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-package com.a.a
+package com.a.recover
 
 import io.flutter.embedding.android.FlutterActivity
 

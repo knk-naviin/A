@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCJBcLDRsLtIml4sMDByG-ggDIQsy0Q5rQ',
-    appId: '1:725077094430:android:c29e3fa4a526ecb70cbe0f',
-    messagingSenderId: '725077094430',
-    projectId: 'a-auth-7204d',
-    storageBucket: 'a-auth-7204d.firebasestorage.app',
+    apiKey: 'AIzaSyACS7lyvUCJzmgWu8cJKrmvjiRbQAB8XrY',
+    appId: '1:301703092246:android:c4a48e6df17c831f757d37',
+    messagingSenderId: '301703092246',
+    projectId: 'a-auth-recover',
+    storageBucket: 'a-auth-recover.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDqQcwONHS6oPSF8wT2OR7UkOzQczzm894',
-    appId: '1:725077094430:ios:fa69fe6d17f232220cbe0f',
-    messagingSenderId: '725077094430',
-    projectId: 'a-auth-7204d',
-    storageBucket: 'a-auth-7204d.firebasestorage.app',
-    iosBundleId: 'com.a.a',
+    apiKey: 'AIzaSyC8006wcwjneynzQ7-fh9XMeVeOk45XxDE',
+    appId: '1:301703092246:ios:5aa16b3b4604c28d757d37',
+    messagingSenderId: '301703092246',
+    projectId: 'a-auth-recover',
+    storageBucket: 'a-auth-recover.firebasestorage.app',
+    iosBundleId: 'com.a.recover',
   );
 }

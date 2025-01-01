@@ -1,48 +1,48 @@
 {
   "project_info": {
-    "project_number": "725077094430",
-    "project_id": "a-auth-7204d",
-    "storage_bucket": "a-auth-7204d.firebasestorage.app"
+    "project_number": "301703092246",
+    "project_id": "a-auth-recover",
+    "storage_bucket": "a-auth-recover.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:725077094430:android:c29e3fa4a526ecb70cbe0f",
+        "mobilesdk_app_id": "1:301703092246:android:c4a48e6df17c831f757d37",
         "android_client_info": {
-          "package_name": "com.a.a"
+          "package_name": "com.a.recover"
         }
       },
       "oauth_client": [
         {
-          "client_id": "725077094430-m6571klrb8kn17gtd05ood2pvi6snso9.apps.googleusercontent.com",
+          "client_id": "301703092246-d8c7v1kd3lf18v34mut0l1siqvb8nrjn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.a.a",
-            "certificate_hash": "ef60b029c41559698b50ad963ca23b3202e36e6a"
+            "package_name": "com.a.recover",
+            "certificate_hash": "f46a66975c9cfa23d36b9c6b20f3717aa6fa77e9"
           }
         },
         {
-          "client_id": "725077094430-14lbkgle8ir3sqpsaskefq3lr97pv96b.apps.googleusercontent.com",
+          "client_id": "301703092246-1hanb3e3ufl8enngggkgpi89cju03je7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJBcLDRsLtIml4sMDByG-ggDIQsy0Q5rQ"
+          "current_key": "AIzaSyACS7lyvUCJzmgWu8cJKrmvjiRbQAB8XrY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "725077094430-14lbkgle8ir3sqpsaskefq3lr97pv96b.apps.googleusercontent.com",
+              "client_id": "301703092246-1hanb3e3ufl8enngggkgpi89cju03je7.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "725077094430-oqirpnpfgbv4gu4pgc6gnq4vs5asg0a2.apps.googleusercontent.com",
+              "client_id": "301703092246-4gul8seon9u36ucnq45iukbeko11pf4u.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.a.a"
+                "bundle_id": "com.a.recover"
               }
             }
           ]
