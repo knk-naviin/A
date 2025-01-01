@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const OtpVerificationScreen(),
         '/home': (context) => const home(),
-        '/otp': (context) => const OtpInputScreen(verificationId: '',),
+        '/otp': (context) => const OtpInputScreen(verificationId: '', phoneNumber: '',),
       },
       onUnknownRoute: (settings) => MaterialPageRoute(
         builder: (context) => Scaffold(
