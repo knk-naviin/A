@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../Authentication/otpInputScreen.dart';
+import '../Authentication/AuthenticationModule.dart';
 
 class startUp extends StatefulWidget {
   const startUp({super.key});
@@ -124,7 +124,7 @@ class _startUpState extends State<startUp> {
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                        builder: (_) => OtpVerificationScreen()),
+                        builder: (_) => AuthModule()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -201,5 +201,4 @@ class _startUpState extends State<startUp> {
         ],
       ),
     );
-  }
-}
+  }}
